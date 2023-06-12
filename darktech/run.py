@@ -1,3 +1,5 @@
+# made by Vigo Walker
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from DarkTech import create_app
