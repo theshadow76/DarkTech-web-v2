@@ -25,3 +25,14 @@ def new_post():
         flash('Your post has been created!', 'success')
         return redirect(url_for('main.home'))
     return render_template('create_post.html', title='New Post', form=form)
+
+@main.route('/admin')
+def admin():
+    return render_template('admin.html')
+
+@main.route('/admin/users')
+def admin_users():
+    # Here you could fetch data from your database and pass it to the template
+    # users = get_all_users()
+    # return render_template('admin_users.html', users=users)
+    return render_template('admin_users.html')
